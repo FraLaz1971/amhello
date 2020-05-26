@@ -3,7 +3,8 @@ CC=gcc
 CXX=g++
 CPPFLAGS="-Wall"
 PKGHOME=$(pwd)
-CFLAGS="-std=c99 -I$PKGHOME/include"
+export CFLAGS="-std=c99 -I$PKGHOME/include"
+echo CFLAGS = $CFLAGS
 LDFLAGS="-Llib"
 autoreconf
 autoconf
